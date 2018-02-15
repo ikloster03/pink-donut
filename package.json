@@ -1,7 +1,9 @@
 {
   "name": "pink-donut",
   "version": "0.0.1",
+  "main": "src/server.js",
   "scripts": {
+    "start": "node server.js",
     "dev": "yarn run development",
     "development": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=webpack.config.js",
     "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=webpack.config.js",
