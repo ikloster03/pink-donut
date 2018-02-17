@@ -1,0 +1,17 @@
+@font-face {
+  font-family: BigJohn;
+  src: url("/assets/fonts/BIG JOHN.otf");
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: normal;
+  src: url("/assets/fonts/OpenSans-Regular.ttf");
+}
+
+body {
+  font-family: OpenSans;
+  font-size: 16px;
+  line-height: $normal;
+}
+

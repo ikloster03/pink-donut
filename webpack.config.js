@@ -49,11 +49,15 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin('./css/[name].css'),
-        // new CopyWebpackPlugin([
-        //     {
-        //         from: PATHS.source + '/img',
-        //         to: PATHS.build + '/img'
-        //     }
-        // ]),
+        new CopyWebpackPlugin([
+            {
+                from: PATHS.source + '/img',
+                to: PATHS.build + '/img'
+            },
+            {
+                from: PATHS.source + '/fonts',
+                to: PATHS.build + '/fonts'
+            }
+        ]),
     ],
 };
