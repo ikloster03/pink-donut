@@ -77,7 +77,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* 1 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: No PostCSS Config found in: /Users/ikloster/Documents/Portfolio/pink_donut/pink-donut/postcss.config.js\n    at Error (native)\n    at /Users/ikloster/Documents/Portfolio/pink_donut/pink-donut/node_modules/postcss-load-config/index.js:51:26\n    at runLoaders (/Users/ikloster/Documents/Portfolio/pink_donut/pink-donut/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Users/ikloster/Documents/Portfolio/pink_donut/pink-donut/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/ikloster/Documents/Portfolio/pink_donut/pink-donut/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/ikloster/Documents/Portfolio/pink_donut/pink-donut/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Promise.resolve.then.then.catch (/Users/ikloster/Documents/Portfolio/pink_donut/pink-donut/node_modules/postcss-loader/lib/index.js:197:71)");
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
