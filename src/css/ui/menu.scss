@@ -66,6 +66,15 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .c-menu {
+    &_header {
+      padding: 20px 0;
+    }
+
+    &_footer {
+      padding-bottom: 20px;
+    }
+  }
   .menu {
     &__link {
       padding: 0 20px;
@@ -74,6 +83,15 @@
 }
 
 @media screen and (min-width: 1900px) {
+  .c-menu {
+    &_header {
+      padding: 20px 0;
+    }
+
+    &_footer {
+      padding-bottom: 20px;
+    }
+  }
   .menu {
     &__link {
       padding: 0 30px;
