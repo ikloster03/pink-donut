@@ -15,16 +15,12 @@
 
 .pink-donut {
   position: absolute;
-  width: 440px;
-  top: 170px;
-  left: 120px;
-
 }
 
 .w-home-center {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
 }
 
 .home-header {
@@ -45,7 +41,6 @@
 
 .glass {
   text-align: center;
-  padding-bottom: 50px;
 }
 
 .w-tomato {
@@ -54,7 +49,85 @@
 }
 .tomato {
   position: absolute;
-  width: 530px;
-  left: -120px;
-  top: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .slide {
+    &__item-1 {
+      display: grid;
+      grid-template-columns: 22% auto 22%;
+    }
+  }
+  .pink-donut {
+    width: 340px;
+    top: 110px;
+    left: -50px;
+  }
+
+  .home-header {
+    font-size: 35px;
+    line-height: 45px;
+    padding-bottom: 30px;
+  }
+
+  .glass {
+    width: 310px;
+    padding-bottom: 30px;
+  }
+
+  .tomato {
+    width: 300px;
+    left: -50px;
+    top: 15px;
+  }
+
+
+}
+
+@media screen and (min-width: 1440px) {
+  .pink-donut {
+    width: 440px;
+    top: 130px;
+    left: -20px;
+  }
+
+  .home-header {
+    font-size: 50px;
+    line-height: 60px;
+    padding-bottom: 30px;
+  }
+
+  .glass {
+    width: 440px;
+    padding-bottom: 30px;
+  }
+
+  .tomato {
+    width: 430px;
+    left: -70px;
+    top: 15px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .pink-donut {
+    width: 440px;
+    top: 170px;
+    left: 120px;
+  }
+  .home-header {
+    font-size: 60px;
+    line-height: 70px;
+    padding-bottom: 50px;
+  }
+
+  .glass {
+    width: 540px;
+    padding-bottom: 50px;
+  }
+
+  .tomato {
+    width: 530px;
+    left: -120px;
+    top: 15px;
+  }
 }

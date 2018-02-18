@@ -14,7 +14,6 @@
   height: 100vh;
   &__home {
     background: $yellow;
-    padding-top: 240px;
   }
   &__what-i-do {
     background: $white;
@@ -45,6 +44,11 @@ body {
     width: 820px;
     margin: 0 auto;
   }
+  .section {
+    &__home {
+      padding-top: 160px;
+    }
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -52,11 +56,21 @@ body {
     width: 1152px;
     margin: 0 auto;
   }
+  .section {
+    &__home {
+      padding-top: 200px;
+    }
+  }
 }
 
 @media screen and (min-width: 1900px) {
   .container {
     width: 1520px;
     margin: 0 auto;
+  }
+  .section {
+    &__home {
+      padding-top: 240px;
+    }
   }
 }
