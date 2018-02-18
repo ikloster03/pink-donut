@@ -1,0 +1,29 @@
+.footer {
+  background: $blue-light;
+  padding: 20px 0;
+}
+
+.w-footer {
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  font-family: BigJohn;
+  font-size: 18px;
+  color: $black;
+}
+
+@media screen and (min-width: 1024px) {
+  .w-footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .w-footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
