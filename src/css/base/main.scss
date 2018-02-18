@@ -9,6 +9,27 @@
   src: url("/assets/fonts/OpenSans-Regular.ttf");
 }
 
+
+.section {
+  height: 100vh;
+  &__home {
+    background: $yellow;
+    padding-top: 240px;
+  }
+  &__what-i-do {
+    background: $white;
+  }
+  &__my-works {
+    background: $white;
+  }
+  &__about-me {
+    background: $white;
+  }
+  &__contact {
+    background: $blue-light;
+  }
+}
+
 body {
   font-family: OpenSans;
   font-size: 16px;
