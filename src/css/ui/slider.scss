@@ -1,0 +1,60 @@
+.slider {
+
+}
+
+.slide {
+  &__item-1 {
+    display: grid;
+    grid-template-columns: 22% auto 22%;
+  }
+}
+
+.w-pink-donut {
+  position: relative;
+}
+
+.pink-donut {
+  position: absolute;
+  width: 440px;
+  top: 170px;
+  left: 120px;
+
+}
+
+.w-home-center {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.home-header {
+  text-align: center;
+  font-family: BigJohn;
+  font-size: 60px;
+  line-height: 70px;
+  color: $black;
+  padding-bottom: 50px;
+}
+.w-button {
+  &__section-home {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+}
+
+.glass {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.w-tomato {
+  position: relative;
+
+}
+.tomato {
+  position: absolute;
+  width: 530px;
+  left: -120px;
+  top: 15px;
+}
