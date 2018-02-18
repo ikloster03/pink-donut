@@ -1,7 +1,24 @@
 .header {
   background: $yellow;
-  padding: 20px 0;
   position: fixed;
   width: 100%;
   z-index: 1000;
+}
+
+@media screen and (min-width: 1024px){
+  .header {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .header {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1900px){
+  .header {
+    padding: 20px 0;
+  }
 }
