@@ -25,7 +25,6 @@ body {
   &__header {
     display: flex;
     align-items: center;
-    padding-bottom: 145px;
     &_left {
       justify-content: space-around;
     }
@@ -90,7 +89,10 @@ body {
     margin: 0 auto;
   }
   .section {
-    padding: 120px 0;
+    padding: 60px 0;
+    &__header {
+      padding-bottom: 60px;
+    }
     &__title {
       font-size: 50px;
       line-height: 60px;
@@ -127,6 +129,9 @@ body {
   }
   .section {
     padding: 120px 0;
+    &__header {
+      padding-bottom: 60px;
+    }
     &__title {
       font-size: 66px;
       line-height: 76px;
@@ -165,6 +170,9 @@ body {
   }
   .section {
     padding: 120px 0;
+    &__header {
+      padding-bottom: 145px;
+    }
     &__title {
       font-size: 76px;
       line-height: 86px;
