@@ -20,105 +20,10 @@ body {
 
 }
 
-.section {
-  height: 100vh;
-  &__header {
-    display: flex;
-    align-items: center;
-    &_left {
-      justify-content: space-around;
-    }
-
-    &_right {
-      justify-content: flex-end;
-    }
-  }
-  &__title {
-    flex: 1;
-    position: relative;
-    font-family: BigJohn;
-    &:before, &:after {
-      content: "";
-      position: absolute;
-      width: 484px;
-      height: 5px;
-      background: $black;
-      z-index: 30;
-    }
-
-    &:before {
-      top: 88px;
-      left: 0;
-    }
-
-    &:after {
-      top: 99px;
-      left: 46px;
-    }
-
-    &_without-description {
-      flex: none;
-    }
-  }
-  &__description {
-    flex: 1;
-  }
-  &__body {
-
-  }
-  &__home {
-    background: $yellow;
-  }
-  &__what-i-do {
-    background: $white;
-  }
-  &__my-works {
-    background: $white;
-  }
-  &__about-me {
-    background: $white;
-  }
-  &__contact {
-    background: $blue-light;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .container {
     width: 820px;
     margin: 0 auto;
-  }
-  .section {
-    padding: 60px 0;
-    &__header {
-      padding-bottom: 60px;
-    }
-    &__title {
-      font-size: 50px;
-      line-height: 60px;
-      &:before, &:after {
-        width: 324px;
-        height: 5px;
-        background: $black;
-        z-index: 30;
-      }
-
-      &:before {
-        top: 68px;
-        left: 0;
-      }
-
-      &:after {
-        top: 79px;
-        left: 46px;
-      }
-    }
-    &__description {
-      font-size: 12px;
-    }
-    &__home {
-      padding-top: 240px;
-    }
   }
 }
 
@@ -127,61 +32,11 @@ body {
     width: 1152px;
     margin: 0 auto;
   }
-  .section {
-    padding: 120px 0;
-    &__header {
-      padding-bottom: 60px;
-    }
-    &__title {
-      font-size: 66px;
-      line-height: 76px;
-      &:before, &:after {
-        content: "";
-        position: absolute;
-        width: 424px;
-        height: 5px;
-        background: $black;
-        z-index: 30;
-      }
-
-      &:before {
-        top: 88px;
-        left: 0;
-      }
-
-      &:after {
-        top: 99px;
-        left: 46px;
-      }
-    }
-    &__description {
-      font-size: 16px;
-    }
-    &__home {
-      padding-top: 200px;
-    }
-  }
 }
 
 @media screen and (min-width: 1900px) {
   .container {
     width: 1520px;
     margin: 0 auto;
-  }
-  .section {
-    padding: 120px 0;
-    &__header {
-      padding-bottom: 145px;
-    }
-    &__title {
-      font-size: 76px;
-      line-height: 86px;
-    }
-    &__description {
-      font-size: 18px;
-    }
-    &__home {
-      padding-top: 240px;
-    }
   }
 }
