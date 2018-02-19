@@ -181,11 +181,8 @@
     </section>
     <section class="section section__contact">
         <div class="container">
-            <div class="section__header section__header_right">
-                <div class="section__title section__title_without-description">contact</div>
-            </div>
-            <div class="section__body">
-                <div class="w-form">
+            <div class="section__body section__body_contact">
+                <div class="section__contact__form">
                     <form action="" class="form">
                         <div class="form__block">
                             <label for="contact-name" class="form__label">name</label>
@@ -199,12 +196,19 @@
                             <label for="contact-message" class="form__label">message</label>
                             <textarea id="contact-message" class="form__textarea"></textarea>
                         </div>
-                        <div class="form__block">
-                            <a href="" class="btn btn__main btn__main_yellow">send</a>
+                        <div class="form__block form__block_button">
+                            <div class="btn btn__w-main">
+                                <a href="" class="btn btn__main btn__main_yellow">send</a>
+                                <span class="btn__main__line btn__main__line_top"></span>
+                                <span class="btn__main__line btn__main__line_bottom"></span>
+                            </div>
                         </div>
                     </form>
                 </div>
-                <div class="w-info">
+                <div class="section__contact__info">
+                    <div class="section__header section__header_right section__header_contact">
+                        <div class="section__title section__title_without-description">contact</div>
+                    </div>
                     <div class="social-buttons">
                         <a href="#" class="btn btn__social">
                             <img src="assets/img/soc-fb.png" alt="facebook" class="btn__social__image">
@@ -227,14 +231,16 @@
                             <div class="contacts__header">address</div>
                             <div class="contacts__text">9114 Bridge Street, Hillsboro, OR 97124</div>
                         </div>
-                        <div class="contacts__item">
-                            <div class="contacts__header">phone</div>
-                            <div class="contacts__text">+48 202 - 555 - 0114</div>
-                        </div>
-                        <div class="contacts__item">
-                            <div class="contacts__header">email</div>
-                            <div class="contacts__text">contact@yoursite.com</div>
-                        </div>
+                       <div class="contacts__w-items">
+                           <div class="contacts__item">
+                               <div class="contacts__header">phone</div>
+                               <div class="contacts__text">+48 202 - 555 - 0114</div>
+                           </div>
+                           <div class="contacts__item">
+                               <div class="contacts__header">email</div>
+                               <div class="contacts__text">contact@yoursite.com</div>
+                           </div>
+                       </div>
                     </div>
                 </div>
             </div>
