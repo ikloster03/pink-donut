@@ -1,0 +1,24 @@
+.c-work-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.w-work-card {
+  flex: 1;
+}
+
+.work-card {
+  &__image {
+
+  }
+}
+
+.w-button {
+  &__section-my-works {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+  }
+}
+

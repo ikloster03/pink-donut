@@ -1,0 +1,116 @@
+.section {
+  &__contact {
+    background: $blue-light;
+    height: calc(100vh - 110px);
+    &__form {
+      padding-top: 90px;
+      flex: 1;
+      padding-right: 7%;
+    }
+    &__info {
+      flex: 1;
+      padding-left: 7%;
+    }
+  }
+
+  &__body {
+    &_contact {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn__social {
+  flex: 1;
+  padding: 0 5px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  &__item {
+    flex: 1;
+  }
+  &__w-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header {
+    font-family: BigJohn;
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    max-width: 160px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section {
+    &__header {
+      &_contact {
+        padding-bottom: 0;
+        justify-content: center;
+      }
+    }
+  }
+  .social-buttons {
+    padding: 0 10px;
+    padding-top: 60px;
+  }
+  .contacts {
+    padding-top: 30px;
+    &__item {
+      padding: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    &__header {
+      &_contact {
+        padding-bottom: 0;
+        justify-content: center;
+      }
+    }
+  }
+  .social-buttons {
+    padding: 0 30px;
+    padding-top: 60px;
+  }
+  .contacts {
+    padding-top: 0;
+    &__item {
+      padding: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .section {
+    &__header {
+      &_contact {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .social-buttons {
+    padding: 0 30px;
+    padding-top: 60px;
+  }
+  .contacts {
+    padding-top: 0;
+    &__item {
+      padding: 30px;
+    }
+  }
+}

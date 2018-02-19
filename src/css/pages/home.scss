@@ -1,0 +1,29 @@
+.section {
+  &__home {
+    background: $yellow;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .section {
+    &__home {
+      padding-top: 240px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .section {
+    &__home {
+      padding-top: 200px;
+    }
+  }
+}
+
+@media screen and (min-width: 1900px){
+  .section {
+    &__home {
+      padding-top: 240px;
+    }
+  }
+}
