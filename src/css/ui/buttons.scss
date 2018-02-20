@@ -19,15 +19,6 @@
       z-index: 10;
       background: $black;
       height: 5px;
-      width: 297px;
-      &_top {
-        top: 17px;
-        left: -83px;
-      }
-      &_bottom {
-        top: 27px;
-        left: -55px;
-      }
     }
 
     &_yellow {
@@ -49,5 +40,78 @@
 
   &__social {
 
+  }
+
+  &__menu {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .btn {
+    &__main {
+      &__line {
+        height: 3px;
+        width: 262px;
+        &_top {
+          top: 17px;
+          left: -60px;
+        }
+        &_bottom {
+          top: 27px;
+          left: -32px;
+        }
+      }
+    }
+    &__menu {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    &__menu {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    &__main {
+      &__line {
+        height: 5px;
+        width: 297px;
+        &_top {
+          top: 17px;
+          left: -83px;
+        }
+        &_bottom {
+          top: 27px;
+          left: -55px;
+        }
+      }
+    }
+    &__menu {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .btn {
+    &__menu {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .btn {
+    &__menu {
+      display: none;
+    }
   }
 }

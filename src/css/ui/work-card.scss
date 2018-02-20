@@ -1,11 +1,9 @@
 .c-work-cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
 }
 
 .w-work-card {
-  flex: 1;
+
 }
 
 .work-card {
@@ -18,7 +16,80 @@
   &__section-my-works {
     display: flex;
     justify-content: center;
-    padding-top: 70px;
   }
 }
 
+@media screen and (min-width: 320px){
+  .c-work-cards {
+    display: block;
+  }
+  .w-work-card {
+    display: block;
+    padding: 15px;
+  }
+  .work-card {
+
+  }
+  .w-button {
+    &__section-my-works {
+      padding-top: 30px;
+
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .c-work-cards {
+
+  }
+  .w-work-card {
+
+  }
+  .work-card {
+
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .c-work-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .w-work-card {
+    padding: 0;
+    flex: 1;
+  }
+  .work-card {
+
+  }
+  .w-button {
+    &__section-my-works {
+      padding-top: 70px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .c-work-cards {
+
+  }
+  .w-work-card {
+
+  }
+  .work-card {
+
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .c-work-cards {
+
+  }
+  .w-work-card {
+
+  }
+  .work-card {
+
+  }
+}

@@ -14,7 +14,16 @@
   color: $black;
 }
 
+@media screen and (min-width: 320px) {
+  .copyright {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 1024px) {
+  .copyright {
+    text-align: left;
+  }
   .w-footer {
     flex-direction: column;
     justify-content: center;
