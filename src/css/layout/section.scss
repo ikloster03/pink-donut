@@ -46,6 +46,8 @@
       display: block;
     }
     &__title {
+      font-size: 25px;
+      line-height: 35px;
       padding: 30px 0;
       text-align: center;
       &:before, &:after {
@@ -54,13 +56,13 @@
       }
 
       &:before {
-        top: 55px;
+        top: 65px;
         left: 50%;
         margin-left: -80px;
       }
 
       &:after {
-        top: 60px;
+        top: 70px;
         left: 50%;
         margin-left: -60px;
       }
