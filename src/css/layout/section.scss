@@ -1,5 +1,4 @@
 .section {
-  height: 100vh;
   &__header {
     display: flex;
     align-items: center;
@@ -42,9 +41,21 @@
     flex: 1;
   }
 }
+@media screen and (min-width: 320px){
+  .section {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .section {
+
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .section {
+    height: 100vh;
     padding: 60px 0;
     &__header {
       padding-bottom: 60px;
