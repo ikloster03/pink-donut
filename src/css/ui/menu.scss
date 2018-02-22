@@ -111,6 +111,9 @@
     &_header {
 
     }
+    &_footer {
+      display: none;
+    }
   }
   .menu {
     visibility: hidden;
@@ -137,6 +140,7 @@
     }
 
     &_footer {
+      display: flex;
       padding-bottom: 20px;
     }
   }

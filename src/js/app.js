@@ -18,8 +18,8 @@ $(document).ready( function ( ) {
 
 
     function setHeader() {
-        console.log('header', $( this ).width( ));
-        if( $( this ).width( ) < 1024) {
+        console.log('header', $window.width( ));
+        if( $window.width( ) < 1024) {
             $( headerMenuList ).addClass( menuMobile );
         } else {
             $( headerMenuList ).removeClass( menuMobile );
