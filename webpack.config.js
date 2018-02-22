@@ -16,6 +16,13 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                include: [
+                    PATHS.source
+                ]
+            },
+            {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
