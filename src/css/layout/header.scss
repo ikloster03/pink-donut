@@ -5,6 +5,19 @@
   z-index: 1000;
   transition: padding-top .5s, padding-bottom .5s linear;
   padding: 20px 0;
+
+  &_yellow {
+    background: $yellow !important;
+  }
+
+  &_white {
+    background: $white !important;
+  }
+
+  &_blue {
+    background: $blue-light !important;
+  }
+
   &_active {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
