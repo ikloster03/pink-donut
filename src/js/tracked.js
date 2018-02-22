@@ -2,11 +2,13 @@ import $ from 'jquery';
 
 export default class TrackedMenu {
 
-    constructor( header, headerColors, menuClass, menuClassActive, trackedClassName ) {
+    constructor( header, headerColors, menuColors, menuId, menuClassActive, trackedClassName ) {
         const self = this;
         self.$header = $( header );
         self.headerColors = headerColors;
-        self.$menuClass = $( menuClass + ' li' );
+        self.menuColors = menuColors;
+        self.$menuLi = $( menuId + ' li' );
+        self.$menu = $( menuId );
         self.menuClassActive = menuClassActive;
         self.$trackedClassName = $( trackedClassName );
 
@@ -50,14 +52,19 @@ export default class TrackedMenu {
 
     changeMenuItem( hash ) {
         const self = this;
-        self.$menuClass.removeClass( self.menuClassActive );
-        for( const colorItem in self.headerColors) {
+        self.$menuLi.removeClass( self.menuClassActive );
+        for ( const colorItem in self.headerColors) {
             self.$header.removeClass( self.headerColors[ colorItem ] );
         }
-        self.$menuClass.each(function( ) {
+        for ( const colorItem in self.menuColors) {
+            self.$menu.removeClass( self.menuColors[ colorItem ] );
+        }
+
+        self.$menuLi.each(function( ) {
             const item = $( this ).children( 'a' ).attr( 'href' ).slice( 1 );
             if ( item === hash ) {
                 self.$header.addClass( self.headerColors[ item ] );
+                self.$menu.addClass( self.menuColors[ item ] );
                 $( this ).addClass( self.menuClassActive );
             }
 
@@ -81,7 +88,7 @@ export default class TrackedMenu {
 
             let scrollPosition = $window.scrollTop( );
 
-            curId = self.getCurrentSection( sections, scrollPosition + self.$menuClass.outerHeight( true ) );
+            curId = self.getCurrentSection( sections, scrollPosition + self.$menuLi.outerHeight( true ) );
             if ( curId ) {
                 if ( lastId !== curId ) {
                     lastId = curId;

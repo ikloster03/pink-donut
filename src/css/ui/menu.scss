@@ -20,11 +20,13 @@
     overflow: hidden;
     padding: 15px;
   }
+
   &_active {
     visibility: visible !important;
     opacity: 1 !important;
 
   }
+
   &_yellow {
     .menu__item {
       &:hover, &_active {
@@ -34,6 +36,17 @@
       }
     }
   }
+
+  &_white {
+    .menu__item {
+      &:hover, &_active {
+        .menu__link {
+          color: $white;
+        }
+      }
+    }
+  }
+
   &_blue {
     .menu__item {
       &:hover, &_active {
