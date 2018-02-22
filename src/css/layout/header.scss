@@ -3,6 +3,13 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
+  transition: padding-top .5s, padding-bottom .5s linear;
+  padding: 20px 0;
+  &_active {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175) !important;
+  }
 }
 .w-button {
   &_header {
@@ -13,7 +20,7 @@
   .header {
     height: 48px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    padding: 0;
+
   }
   .w-button {
     &_header {
@@ -24,7 +31,7 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    padding: 0;
+
   }
   .w-button {
     &_header {
@@ -35,9 +42,10 @@
 
 @media screen and (min-width: 1024px) {
   .header {
+    padding: 20px 0;
     height: auto;
     box-shadow: none;
-    padding: 0;
+
   }
   .w-button {
     &_header {
@@ -48,7 +56,7 @@
 
 @media screen and (min-width: 1440px) {
   .header {
-    padding: 0;
+    padding: 30px 0;
   }
   .w-button {
     &_header {
@@ -59,7 +67,7 @@
 
 @media screen and (min-width: 1900px) {
   .header {
-    padding: 20px 0;
+    padding: 60px 0;
   }
   .w-button {
     &_header {
