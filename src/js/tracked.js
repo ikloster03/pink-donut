@@ -66,6 +66,9 @@ export default class TrackedMenu {
                 self.$header.addClass( self.headerColors[ item ] );
                 self.$menu.addClass( self.menuColors[ item ] );
                 $( this ).addClass( self.menuClassActive );
+                if ( item === 'section-about-me') {
+                    self.trackedDigits();
+                }
             }
 
         });
@@ -96,6 +99,20 @@ export default class TrackedMenu {
                 }
             }
 
+        });
+    }
+
+    trackedDigits() {
+        $('.about-card__header__percent-digits').each(function () {
+            $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
         });
     }
 
